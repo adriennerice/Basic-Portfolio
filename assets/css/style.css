@@ -3,7 +3,8 @@
   }
 
 body {
-    background: #ffffff;
+    /*background: #ffffff;*/
+    background-color: green;
     color: #777777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; 
 }
@@ -13,6 +14,21 @@ img {
     height: 200px;
 }
 
+h1,
+h3 {
+    color: #ffffff;
+}
+
+h3 {
+    position: relative;
+    z-index: 2;
+    left: 0;
+    bottom: 75px;
+    background-color: #4aaaa5;
+    padding: 10px 0 10px 10px;
+    width: 300px;
+    
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -21,7 +37,6 @@ ul {
 
 li {
     float: right;
-    background-color: green;
 }
 
 li a {
@@ -40,15 +55,11 @@ li a {
     position: relative;
     width: 960px;
     padding: 35px;
-    background-color: aqua;
-    
     margin: auto;
 }
 .nav {
     position: absolute;
-    background: purple;
     /*padding-top: 20px;*/
-    
     float: right;
     bottom: 0;
     right: 0;
@@ -58,31 +69,33 @@ li a {
 
 .name {
     position: absolute;
-    background-color: pink;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
-    
     float: left;
     bottom: 0;
     left: 0;
     width: 0 auto;
+    background-color: #4aaaa5;
 }
-
 
 .main {
     background-image: url("../images/pinkdust.png");
-    clear: left;
+    clear: both;
 }
 
 .container {
     background: #ffffff;
     margin: auto;
     width: 960px;
-    padding: 20px;  
+    padding: 20px; 
+    clear: both;
+    overflow: hidden;
+    
 }
 
 .footer {
+    clear: left;
     background: #666666;
     width: 100%;
     color: #ffffff;
@@ -104,11 +117,36 @@ li a {
     /*height: 80px;*/
     padding-left: 20px;
     padding-right: 20px;
-    background-color: green;
 }
+
+/*placeHolder {
+    clear: both;
+}*/
 
 #selfImage {
     transform: rotate(90deg);
     width: 200px;
     height: 200px;
 }
+
+.pItem1,
+.pItem2,
+.pItem3,
+.pItem4,
+.pItem5 {
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+
+.pItem3,
+.pItem5 {
+    clear: left;
+}
+
+.pItem2,
+.pItem4 {
+    margin-left: 20px;
+}
+
+

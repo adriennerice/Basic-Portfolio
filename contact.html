@@ -7,41 +7,46 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
 </head>
 <body>
-    <header>
-        <div>
-            <h1>Adrienne Rice</h1>
-        </div>
-        <div>About</div>
-        <div>Portfolio</div>
-        <div>Contact</div>
-    </header>
-    <hr>
+    <header class="header">
+            <div class="headerSection">
+                <div class="name">
+                    <h1>Adrienne Rice</h1>
+                </div>
+                <div class="nav">
+                    <ul>
+                            <li><a href="index.html">About</a></li>
+                            <li><a href="portfolio.html">| Portfolio |</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+     </header>
     <section class="main">
+        <br>
         <div class="container">
-        <div>   
-            <h2>Contact</h2>
-            <hr>
+            <div>   
+                <h2>Contact</h2>
+                <hr>
+            </div>
+            <div>
+                <form>
+                    Name<br>
+                    <input type="text" name="fullName" value="John Smith"><br>
+                    Email<br>
+                    <input type="text" name="email" value="example@gmail.com"><br>
+                    Message<br>
+                    <input type="text" name="message"><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </div>
-        <div>
-            <form>
-                Name<br>
-                <input type="text" name="fullName" value="John Smith"><br>
-                Email<br>
-                <input type="text" name="email" value="example@gmail.com"><br>
-                Message<br>
-                <input type="text" name="message"><br>
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-        </div>
+        <br><br>
     </section>
-    <footer>
-        <hr>
+    <footer class="footer">
+        <hr class="footerBar">  
         <div>
             Copyright &copy;
-
         </div>
     </footer>
-    
 </body>
 </html>  
