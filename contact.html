@@ -31,12 +31,14 @@
             <div>
                 <form>
                     Name<br>
-                    <input type="text" name="fullName" value="John Smith"><br>
+                    <input type="text" name="fullName" class="fullName" value="John Smith"><br>
                     Email<br>
-                    <input type="text" name="email" value="example@gmail.com"><br>
+                    <input type="text" name="email" class="email" value="example@gmail.com"><br>
                     Message<br>
-                    <input type="text" name="message"><br>
-                    <input type="submit" value="Submit">
+                    <textarea name="message" class="message">
+                    </textarea>
+                    <br>
+                    <input type="submit" value="Submit" id="submit">
                 </form>
             </div>
         </div>
@@ -44,7 +46,7 @@
     </section>
     <footer class="footer">
         <hr class="footerBar">  
-        <div>
+        <div class="copy">
             Copyright &copy;
         </div>
     </footer>
